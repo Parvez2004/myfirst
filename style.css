@@ -235,20 +235,36 @@ textarea{
 /* responsive my web */
 @media screen and (max-width:576px) {
     .skills-container,
-    .about-items
+    .about-items,
+    .banner,nav,nav > ul
     {
         flex-direction: column;
+    }
+    nav > ul{
+        gap:10px;
     }
     .resume-container{
         flex-direction: column;
         padding: 15px;
+    }
+    .banner{
+        margin: 20px;
     }
     footer,.about{
         flex-direction: column;
         padding: 20px;
 
     }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
     .footer-column{
         width: calc(100% - 40px);
+    }
+    .about-item{
+        margin-bottom: 20px;
+    }
+    .header{
+        background-image: none;
     }
 }
